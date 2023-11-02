@@ -1,0 +1,9 @@
+<ul class="tarefas">
+    <li *ngFor="let tarefa of tasks">
+      <h3>{{ tarefa.descricao }}</h3>
+      <button (click)="toggleConclusao(tarefa)">
+        {{ tarefa.concluida ? 'Desmarcar' : 'Marcar' }}
+      </button>
+    </li>
+  </ul>
+  
